@@ -2,7 +2,7 @@
 
 {% block content%}
 {% for snack in snack_list%}
-    <p>{{snack.name}}</p>
+<h2><a style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" href="{% url 'snack_detail' snack.pk %}">{{snack.name}}</h2>
 
     {% endfor %}
 {% endblock content %}

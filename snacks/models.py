@@ -7,7 +7,7 @@ from django.db.models.deletion import CASCADE
 class Snack(models.Model):
     name = models.CharField(max_length=64)
     purchaser = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
-    description = models.TextField(max_length=5)
+    description = models.TextField(max_length=200)
 
 def __str__(self):
     return self.name
